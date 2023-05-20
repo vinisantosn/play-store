@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStore</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active{
+            color: #fff;
+
+        }
+
+        .carousel img{ margin:auto; }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        section{
+            
+            background-color: #fff;
+            padding-top:70px ;
+        }
+
+        header{
+            position: sticky;
+            top:0;
+            left:0;
+            background-color: #5f9a50;
+        }
+        
+        footer{
+            background-color: #5f9a50;
+        }
+
+        #inicio img {
+            max-width:400px;
+            max-height:400px;
+            width: auto;
+            height: auto;
+        }
+        #cabecalho{
+            z-index: 1;
+        }
+        #inicio{
+            z-index: 2;
+        }
+        #produtos{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho"  >
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>PlayStore</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#produtos" class="nav-link">Produtos</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div  data-bs-spy="scroll" data-bs-target="#cabecalho" >
+        <section id="inicio" >
+            <div class="container">
+                <h2>Início</h2>
+            <div id="carousel-inicio" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="./imagens/carousel-controle-e-jogo.png" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item ">
+                        <img class="d-block w-100" src="./imagens/carousel-ps2-console.png" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/ps2-e-jogos.png" />
+                    </div>
+                    <button data-bs-target="#carousel-inicio" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-inicio" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+        
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            
+        </section>
+
+
+        <section id="produtos">
+            
+            <div class="container">
+                <h1>Produtos</h1>
+                <div class="row">
+                    
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card ">
+                            <img src="./imagens/jogo-1.png" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Rise to Honor</h4>
+                                
+                                <p class="card-text">Jet Li: Rise to Honor is a video game released in 2004 for the PlayStation 2. The game features the likeness, voice acting and motion capture work of martial arts actor Jet Li, and features martial arts choreography by Corey Yuen.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            
+                            <img src="./imagens/jogo-2.png" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Grand theft auto III</h4>
+                                
+                                <p class="card-text">Grand Theft Auto III is a 2001 action-adventure game developed by DMA Design and published by Rockstar Games. It is the third main entry in the Grand Theft Auto series, following 1999's Grand Theft Auto 2, and the fifth instalment overall.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            
+                            <img src="./imagens/jogo-3.png" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Half-Life</h4>
+                                
+                                <p class="card-text">Half-Life is a 1998 first-person shooter (FPS) game developed by Valve and published by Sierra Studios for Windows. It was Valve's debut product and the first game in the Half-Life series.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            
+                            <img src="./imagens/jogo-4.png" />
+                            <div class="card-body">
+                                <h4 class="card-title"> God of War II</h4>
+                                
+                                <p class="card-text">God of War II is an action-adventure hack and slash video game developed by Santa Monica Studio and published by Sony Computer Entertainment (SCE). First released for the PlayStation 2 (PS2) console on March 13, 2007, it is the second installment in the God of War series, the sixth chronologically, and the sequel to 2005's God of War.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            
+                            <img src="./imagens/jogo-5.jpg" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Aragorn's Quest</h4>
+                                
+                                <p class="card-text">The Lord of the Rings: Aragorn's Quest is an action-adventure video game released in 2010 by WB Games on various Nintendo and Sony platforms, with Headstrong Games developing a Wii version and TT Fusion developing the game on other platforms.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            
+                            <img src="./imagens/jogo-6.png" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Nitro Bike</h4>
+                                
+                                <p class="card-text">Nitrobike is a dirt-bike racing video game for the Wii and PlayStation 2. It is published by Ubisoft and was developed by Left Field Productions, the developer previously responsible for, among other games, Excitebike 64, MTX Mototrax and Dave Mirra BMX Challenge.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            
+                            <img src="./imagens/jogo-7.jpg" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Lego Star Wars: The Video Game</h4>
+                                
+                                <p class="card-text">Lego Star Wars: The Video Game (sometimes simply called Lego Star Wars) is a Lego-themed, action-adventure video game based on the Lego Star Wars line of toys, and the first installment in the Lego video game franchise developed by Traveller's Tales, which would develop all future Lego titles from that point on.</p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-sm-12  ">
+                        <div class="card">
+                            <img src="./imagens/jogo-8.png" />
+                            <div class="card-body">
+                                <h4 class="card-title"> Mega Man</h4>
+                                
+                                <p class="card-text">Mega Man Anniversary Collection is a compilation of video games developed by Atomic Planet and published by Capcom. It was released in North America on June 23, 2004 for the PlayStation 2 and GameCube and on March 15, 2005 for the Xbox. </p>
+                                <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                            <footer class="card-footer">
+                                <time>Postado em 19/05/2023 às 09:31:56</time>
+                            </footer>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="mt-4"> <p>&copy; Desenvolvido por Vinicius Santos</p>
+        <p>Os textos de descrição dos jogos podem ser encontrados na <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" class="link" target="_blank" >Wikipedia</a> quando buscado seus títulos. </p></footer>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
